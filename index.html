@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniel's coding challenge</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <section class="container">
+        <div class="row">
+            <h1 class="text-center col-12">
+                Daniel's coding challenge
+            </h1>
+        </div>
+    </section>
+</header>    
+<form name="create-account" onsubmit="return validator();">
+    
+<section class="container">
+<div class="row">
+<div class="form-cont col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 align-self-center">
+
+    
+        <div class="row title">
+            
+            <div class="col-12">
+                <h4>Create Your Free Account</h4>
+            </div>
+        </div>
+        <div class="row form-group" id="firstName">
+            <label for="fName" class="col-12 col-form-label">
+                First Name
+            </label>
+            <input class="form-control" type="text" value="" id="fName" name="fName">
+            <small></small>
+        </div>    
+        <div class="row form-group" id="lastName">
+            <label for="lName" class="col-12 col-form-label">
+                Last Name
+            </label>
+            <input class="form-control" type="text" value="" id="lName">
+            <small></small>
+        </div>
+        <div class="row form-group" id="userName">
+            <label for="uName" class="col-12 col-form-label">
+                Username
+            </label>
+            <input class="form-control" type="text" value="" id="uName">
+            <small></small>
+        </div> 
+        <div class="row form-group" id="password">
+            <label for="pWord" class="col-12 col-form-label">
+                Password
+            </label>
+            <input class="form-control" type="password" value="" id="pWord">
+            <small>At least 8 characters</small>
+        </div> 
+        <div class="row form-group" id="e-mail">
+            <label for="eMail" class="col-12 col-form-label">
+                Email
+            </label>
+            <input class="form-control" type="email" value="" id="eMail">
+            <small>An activation link will be sent to this email</small>
+        </div> 
+        
+        <div class="row terms">
+            <p class="col-12">By clicking Submit, I agree that I have read and accepted the <a data-toggle="modal" href="#termsAnd">Terms and Conditions.</a></p>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+</div>    
+</div>    
+</section>
+    
+</form>
+    
+    
+
+<div class="modal fade" id="termsAnd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Terms and Conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+                </div>
+                <div class="modal-body"> 
+                    Terms and Conditions here....
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">I AGREE</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+
+
+
+</html>
